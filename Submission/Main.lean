@@ -1,11 +1,11 @@
-import Submission.Challenge09
+import Submission.Challenge10
 set_option linter.all false
 
 namespace Submission
 
-def r : ℕ := 0
+universe u v
+def r : Ordinal.{v} := 3
 
-universe u
-theorem challenge_9 : statement_09.{u} r := challenge_9_proof
+theorem challenge_10 : statement_10.{u, v} r := challenge_10_proof
 
 end Submission
