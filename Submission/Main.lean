@@ -1,11 +1,11 @@
-import Submission.Challenge08
+import Submission.Challenge09
 set_option linter.all false
 
 namespace Submission
 
-def r : ℕ := 2
+def r : ℕ := 0
 
 universe u
-theorem challenge_8 : statement_08.{u} r := challenge_8_proof
+theorem challenge_9 : statement_09.{u} r := challenge_9_proof
 
 end Submission
