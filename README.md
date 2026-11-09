@@ -16,9 +16,11 @@ Public submission repository for the [Ten Challenges](https://tenchallenges.gith
 | `challenge_9` | `Submission/Challenge09.lean` | `r = 0` | Frankl's union-closed sets conjecture baseline at $r = 0$ |
 | `challenge_10` | `Submission/Challenge10.lean` | `r = 3` | Unfriendly partition game on arbitrary countable graphs for ordinal clock $r = 3$ |
 | `challenge_10` | `Submission/Challenge10R4.lean` | `r = 4` | Four-round unfriendly partition game on arbitrary graphs |
+| `challenge_10` | `Submission/Challenge10R5.lean` | `r = 5` | Five-round unfriendly partition game on arbitrary graphs; local verification passed |
 
-`Submission/Main.lean` now selects the new `r = 4` result. The earlier `r = 3`
-proof remains in `Submission/Challenge10.lean`.
+`Submission/Main.lean` selects the `r = 5` result. The earlier `r = 3` and
+`r = 4` proofs remain available in their respective modules. The five-round
+proof reuses the four-round module's helper lemmas.
 
 The official generated signature and axiom checker passes locally and exports
 the certified parameter `4`. The Prove2Me version also compiles against its
