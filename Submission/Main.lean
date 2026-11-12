@@ -1,7 +1,10 @@
-import Submission.Challenge10R5
+import Submission.Challenge05R4
+set_option linter.all false
 
 namespace Submission
-universe u v
-def r : Ordinal.{v} := 5
-theorem challenge_10 : statement_10.{u, v} r := challenge_10_r5_proof
+
+def r : ℕ := 4
+
+theorem challenge_5 : ErdosHajnalConjectureFor (SimpleGraph.pathGraph r) := challenge_5_r4_proof
+
 end Submission
