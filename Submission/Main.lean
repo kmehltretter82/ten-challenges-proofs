@@ -1,10 +1,10 @@
-import Submission.Challenge05R4
+import Submission.Challenge04R2
 set_option linter.all false
 
 namespace Submission
 
-def r : ℕ := 4
+def r : ℕ := 2
 
-theorem challenge_5 : ErdosHajnalConjectureFor (SimpleGraph.pathGraph r) := challenge_5_r4_proof
+theorem challenge_4 : ∀ {W V : Type} [Fintype W] [Fintype V] [Nonempty V] (H : SimpleGraph W) (G : SimpleGraph V), BipartiteBoundedBy H r → SidorenkoFor H G := challenge_4_r2_proof
 
 end Submission
