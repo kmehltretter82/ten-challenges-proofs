@@ -1,10 +1,6 @@
-import Submission.Challenge04R2
-set_option linter.all false
-
+import Submission.Challenge09R6
 namespace Submission
-
-def r : ℕ := 2
-
-theorem challenge_4 : ∀ {W V : Type} [Fintype W] [Fintype V] [Nonempty V] (H : SimpleGraph W) (G : SimpleGraph V), BipartiteBoundedBy H r → SidorenkoFor H G := challenge_4_r2_proof
-
+def r : ℕ := 6
+universe u
+theorem challenge_9 : statement_09.{u} r := challenge_9_r6_proof
 end Submission

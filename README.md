@@ -14,12 +14,14 @@ Public submission repository for the [Ten Challenges](https://tenchallenges.gith
 | `challenge_7` | `Submission/Challenge07.lean` | `r = 1` | Sphere packing vs. lattice packing constant in dimension $r = 1$ |
 | `challenge_8` | `Submission/Challenge08.lean` | `r = 2` | Ryser's conjecture at $r = 2$ (König's theorem via Hall's marriage theorem) |
 | `challenge_9` | `Submission/Challenge09.lean` | `r = 0` | Frankl's union-closed sets conjecture baseline at $r = 0$ |
+| `challenge_9` | `Submission/Challenge09R6.lean` | `r = 6` | Union-closed families: some element lies in at least $3/8$ of the members (Chase–Lovett entropy method with Boppana's entropy inequality) |
 | `challenge_10` | `Submission/Challenge10.lean` | `r = 3` | Unfriendly partition game on arbitrary countable graphs for ordinal clock $r = 3$ |
 | `challenge_10` | `Submission/Challenge10R4.lean` | `r = 4` | Four-round unfriendly partition game on arbitrary graphs |
 | `challenge_10` | `Submission/Challenge10R5.lean` | `r = 5` | Five-round unfriendly partition game on arbitrary graphs; local verification passed |
 
-`Submission/Main.lean` selects the `r = 5` result. The earlier `r = 3` and
-`r = 4` proofs remain available in their respective modules. The five-round
+`Submission/Main.lean` selects the most recently submitted result, currently
+Challenge 9 at `r = 6`. For Challenge 10 the `r = 3`, `r = 4` and `r = 5` proofs
+remain available in their respective modules. The five-round
 proof reuses the four-round module's helper lemmas.
 
 The official generated signature and axiom checker passes locally and exports
